@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+package "ex43" #DDDDDD {
+Main <|--Website
+
+file index.html{
+}
+class Main{
+
+ -name: String
+    -author: String
+    -js: String
+    -css:String
+
+    +{static}{method}main()
+
+}
+
+
+class Website {
+
+     -name: String
+     -author: String
+     -js: String
+     -css:String
+
+    +{method}htmlfiles()
+    +{method}output()
+    }
+
+@enduml

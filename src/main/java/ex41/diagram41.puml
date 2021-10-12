@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+package "ex41" #DDDDDD {
+Main <|-- Files
+ file exercise41_input{
+
+}
+
+class Main{
+
+    +name: ArrayList<String>
+
+    +{static}{method}main()
+    +sortnames.readname(name);
+    +sortnames.output(name);
+
+}
+
+file exercise41_output{
+class Files{
+
+
+        + name:ArrayList<String>
+
+    +{method}{static}readname((name)
+    +{method}{static}output(name)
+
+
+    }
+
+
+
+
+@enduml

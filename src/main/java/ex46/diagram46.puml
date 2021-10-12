@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+package "ex46" #DDDDDD {
+Main <|-- Histogram
+Main <|-- HistogramItem
+file exercise45_input.txt{
+
+}
+class Main{
+
+    +{static}{method}main()
+    +new Histogram()
+    +new HistogramItem(map)
+    +  pr.file()
+    + items.print()
+
+
+}
+
+
+class Histogram{
+
+     -scan:Scanner
+      -map: HashMap<String, Integer>
+
+    +{method}input()
+    +HashMap()
+    +Histogram()
+    +file()
+
+    }
+
+    class HistogramItem{
+
+          -map: HashMap<String, Integer>
+
+        + HistogramItem()
+        +{method}print()
+
+        }
+
+
+@enduml

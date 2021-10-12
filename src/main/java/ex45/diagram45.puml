@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+package "ex45" #DDDDDD {
+Main <|-- word
+file exercise45_input.txt{
+
+}
+class Main{
+
+    +{static}{method}main()
+    +file.input()
+
+
+}
+
+file output.txt{
+
+class word{
+
+     -out: String
+
+    +{method}input()
+
+    }
+
+@enduml

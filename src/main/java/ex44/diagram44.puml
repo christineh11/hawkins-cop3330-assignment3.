@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+package "ex44" #DDDDDD {
+Main <|-- product
+file exercise44_input.json{
+
+}
+class Main{
+
+
+    +{static}{method}main()
+    +files.jsonfile()
+
+
+}
+
+
+class product{
+
+        -name: String
+
+    +{method}jsonfile()
+
+    }
+
+
+@enduml

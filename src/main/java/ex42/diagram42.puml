@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+package "ex42" #DDDDDD {
+Main <|-- data
+file exercise42_input{
+
+}
+class Main{
+
+
+    +{static}{method}main()
+    +table.readinput();
+
+
+}
+
+
+class data{
+
+        -last: String
+        -first: String
+        -salary: String
+
+    +{method}{static}readinput()
+
+    }
+
+
+@enduml
