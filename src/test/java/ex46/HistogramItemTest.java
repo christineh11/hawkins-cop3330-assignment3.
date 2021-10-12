@@ -8,14 +8,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 class HistogramItemTest {
-   public HashMap<String, Integer> map;
-
-    public void HistogramItem(HashMap<String, Integer> map) {
+    HashMap<String, Integer> map= new HashMap<>();
 
 
-        this.map = map;
-
-    }
     @Test
     void print() {
 

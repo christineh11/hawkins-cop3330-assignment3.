@@ -10,9 +10,7 @@ import java.io.FileReader;
 import static org.junit.jupiter.api.Assertions.*;
 
 class productTest {
-    public String name;
-
-
+    String name="thing";
 
 
     @Test

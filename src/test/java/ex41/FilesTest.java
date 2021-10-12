@@ -13,8 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class FilesTest {
 
+    ArrayList<String> name = new ArrayList<String>();
     @Test
-     void readname(ArrayList<String> name) throws IOException { // reads in data from input file
+     void readname() throws IOException { // reads in data from input file
         BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\chris\\Assignment 3(41-46)\\src\\main\\java\\ex41\\exercise41_input.txt"));
         String line = "";
 
@@ -35,7 +36,7 @@ class FilesTest {
 
 
     @Test
-    void output ( ArrayList<String> name) throws IOException {
+    void output () throws IOException {
         {
 
             //creates writer to output file
